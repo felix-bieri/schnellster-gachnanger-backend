@@ -8,6 +8,7 @@
 
 var mapstructVersion = "1.6.3"
 var lombokMapstructBinding = "0.2.0"
+var openapiStarterWebmvcUi = "3.2.0"
 
 plugins {
     java
@@ -22,7 +23,9 @@ repositories {
 
 dependencies {
     implementation("org.springframework.boot:spring-boot-starter-web")
+    implementation("org.springdoc:springdoc-openapi-starter-webmvc-ui:$openapiStarterWebmvcUi")
     implementation("org.springframework.boot:spring-boot-starter-data-jpa")
+    implementation("org.springframework.boot:spring-boot-starter-validation")
     implementation("org.mapstruct:mapstruct:$mapstructVersion")
 
     runtimeOnly("com.h2database:h2")
