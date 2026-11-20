@@ -3,15 +3,12 @@
  */
 package ch.tvgi.schnellstergachnanger.backend;
 
+import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class BackendApp {
-    public String getGreeting() {
-        return "Hello World!";
-    }
-
+public class BackendService {
     public static void main(String[] args) {
-        System.out.println(new BackendApp().getGreeting());
+        SpringApplication.run(BackendService.class, args);
     }
 }
